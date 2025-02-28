@@ -11,11 +11,6 @@ module Helper =
     // Copyright (c) 2016, github.com/haf/expecto contributors
     // License details: http://www.apache.org/licenses/LICENSE-2.0
 
-    // https://github.com/haf/expecto/blob/10.2.1/Expecto/Expecto.fs#L56
-    let inline private failtest msg = raise <| AssertException msg
-    // https://github.com/haf/expecto/blob/10.2.1/Expecto/Expecto.fs#L58
-    let inline private failtestf fmt = Printf.ksprintf failtest fmt
-
     // https://github.com/haf/expecto/issues/413#issue-836142831
     // https://github.com/haf/expecto/blob/10.2.1/Expecto/Expect.fs#L277-L290
     // https://github.com/haf/expecto/blob/10.2.1/README.md?plain=1#L933-L939
